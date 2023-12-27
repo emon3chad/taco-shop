@@ -1,0 +1,94 @@
+/* style.css */
+
+body {
+  background-image: url("back.jpg");
+  background-size: cover;
+  color: rgb(156, 0, 0);
+  font-family: "Arial", sans-serif;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.3
+  ); /* Adjust the alpha value for the overlay */
+  z-index: -1;
+}
+
+/* The rest of your existing styles */
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+figure {
+  text-align: center;
+}
+
+figcaption {
+  margin-top: 10px;
+}
+
+section {
+  margin-top: 30px;
+}
+
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid white;
+  padding: 10px;
+  text-align: center;
+}
+
+caption {
+  font-size: 1.5em;
+}
+
+a[href="/"] {
+  display: block;
+  text-align: center;
+  margin: 20px 0;
+  color: white;
+}
+
+hr {
+  border: 1px solid white;
+  margin: 20px 0;
+}
+
+p {
+  text-align: center;
+  margin-bottom: 50px;
+}
